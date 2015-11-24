@@ -1,0 +1,15 @@
+---
+applications:
+- name: installer-rule-engine
+  memory: 2048M
+  disk_quota: 4095M
+  timeout: 180
+  instances: 1
+services:
+  - mycdh
+  - myzookeeper-wssb
+  - rule-engine-credentials-ups
+  - dashboard-endpoint-ups
+  - installer-backend-ups
+env:
+  VERSION: "0.15.0"

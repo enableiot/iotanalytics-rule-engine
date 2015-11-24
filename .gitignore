@@ -1,0 +1,6 @@
+*.pyc
+.idea/
+hbase-jars/target/
+*.zip
+pydeps.zip
+*.jar
