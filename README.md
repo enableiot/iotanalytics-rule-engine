@@ -18,12 +18,16 @@ connected using AND or OR operators.
 1. Java 1.8 or higher
 1. Apache Maven 2.2.1 or higher
 1. Python 2.7
+1. Cloud Foundry CLI and Trusted Analytics Platform account (https://github.com/trustedanalytics)
 
 ## Deployment manual
 
-#### On Cloud Foundry 
+#### On Trusted Analytics Platform (https://github.com/trustedanalytics) 
 
-To install rule engine on Cloud Foundry environment:
+Before installation, make sure that you are logged into Trusted Analytics Platform with command:
+```
+cf login
+```
 
 1. Create instances with specified name for each of required services from marketplace:
 
