@@ -2,5 +2,5 @@
 .idea/
 hbase-jars/target/
 *.zip
-pydeps.zip
+!httplib2.zip
 *.jar
