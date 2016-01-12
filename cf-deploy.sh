@@ -35,4 +35,11 @@ cd -
 TARGET=(`cf t | grep "Space"`)
 SPACE=${TARGET[1]}
 
-cf push ${SPACE}-rule-engine -c ./init.sh -b https://github.com/cloudfoundry/binary-buildpack.git
+RETURN=($(cf push ${SPACE}-rule-engine -c ./init.sh -b https://github.com/cloudfoundry/binary-buildpack.git))
+
+if [ "$RETURN" = "FAILED" ]
+then
+	exit 1
+fi
+
+exit 0
